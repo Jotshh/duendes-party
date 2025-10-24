@@ -2,13 +2,14 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: "#f5f5f5",
     alignItems: "center",
+    paddingBottom: 40,
   },
   header: {
     width: "100%",
-    backgroundColor: "#4B0D0D", // vinho
+    backgroundColor: "#4B0D0D",
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
     alignItems: "center",
@@ -29,11 +30,14 @@ export const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     fontWeight: "bold",
-    marginHorizontal: 10,
   },
   form: {
-    marginTop: 40,
+    marginTop: 30,
     width: "85%",
+  },
+  subtitle: {
+    color: "#aaa",
+    marginBottom: 15,
   },
   input: {
     borderBottomWidth: 1,
@@ -43,10 +47,18 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     color: "#4B0D0D",
   },
-  forgotText: {
+  checkboxContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 25,
+  },
+  checkboxText: {
+    marginLeft: 8,
     color: "#4B0D0D",
+  },
+  link: {
+    textDecorationLine: "underline",
     fontWeight: "bold",
-    marginBottom: 30,
   },
   loginButton: {
     backgroundColor: "#4B0D0D",
